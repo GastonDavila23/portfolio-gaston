@@ -13,7 +13,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tudominio.com"),
+  metadataBase: new URL("https://portfolio-gaston.vercel.app/"),
   title: "Gastón Dávila | Full Stack Developer",
   description:
     "Portafolio profesional de Gastón Dávila. Desarrollador Full Stack especializado en Next.js, TypeScript y Tailwind CSS.",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Gastón Dávila | Full Stack Developer",
     description:
       "Desarrollador Full Stack especializado en Next.js, TypeScript y soluciones web escalables.",
-    url: "https://tudominio.com",
+    url: "https://portfolio-gaston.vercel.app/",
     siteName: "Gastón Dávila Portfolio",
     images: [
       {
