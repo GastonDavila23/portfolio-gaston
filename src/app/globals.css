@@ -28,9 +28,16 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  /* Selección en Modo Claro (Light Mode) */
   ::selection {
-    background-color: rgba(0, 229, 255, 0.3);
-    color: #00e5ff;
+    background-color: #0070f3; /* Azul de tu marca */
+    color: #ffffff;
+  }
+
+  /* Selección en Modo Oscuro (Dark Mode) */
+  .dark ::selection {
+    background-color: rgba(0, 229, 255, 0.3); /* Fondo cian translúcido */
+    color: #00e5ff; /* Texto cian brillante */
   }
 }
 

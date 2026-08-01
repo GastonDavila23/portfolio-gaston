@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Mail, Terminal } from "lucide-react";
 import Link from "next/link";
 import { personalInfo } from "@/data/portfolio";
+import { handleEmailClick } from "@/utils/email";
 
 export const Hero = () => {
   return (
@@ -129,6 +130,7 @@ export const Hero = () => {
         {/* Correo Electrónico */}
         <a
           href={`mailto:${personalInfo.email}`}
+          onClick={(e) => handleEmailClick(e, personalInfo.email)}
           aria-label="Enviar correo electrónico"
           className="rounded-xl border border-neutral-200 bg-neutral-100 p-2.5 text-neutral-600 transition-colors hover:border-brand-blue/40 hover:text-brand-blue dark:border-neutral-800/80 dark:bg-neutral-900/40 dark:text-neutral-400 dark:hover:border-brand-cyan/40 dark:hover:text-white"
         >

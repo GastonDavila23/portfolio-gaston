@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -10,11 +13,33 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Gastón Dávila | Developer",
+  metadataBase: new URL("https://tudominio.com"),
+  title: "Gastón Dávila | Full Stack Developer",
   description:
-    "Portafolio profesional de Gastón Dávila. Desarrollo web moderno, escalable y orientado a resultados con Next.js, TypeScript y Tailwind CSS.",
-  icons: {
-    icon: "/favicon.ico",
+    "Portafolio profesional de Gastón Dávila. Desarrollador Full Stack especializado en Next.js, TypeScript y Tailwind CSS.",
+  openGraph: {
+    title: "Gastón Dávila | Full Stack Developer",
+    description:
+      "Desarrollador Full Stack especializado en Next.js, TypeScript y soluciones web escalables.",
+    url: "https://tudominio.com",
+    siteName: "Gastón Dávila Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Gastón Dávila - Full Stack Developer",
+      },
+    ],
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gastón Dávila | Full Stack Developer",
+    description:
+      "Desarrollador Full Stack especializado en Next.js, TypeScript y Tailwind CSS.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -34,6 +59,11 @@ export default function RootLayout({
         <main className="mx-auto max-w-6xl px-6 pt-24 md:px-12">
           {children}
         </main>
+
+        <Footer />
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
