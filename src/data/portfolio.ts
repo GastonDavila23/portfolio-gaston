@@ -15,34 +15,73 @@ export const personalInfo: PersonalInfo = {
 
 export const projects: Project[] = [
   {
+    id: "proj-0",
+    title: "Sistema de Asignación y Control Operativo (PPS)",
+    description:
+      "Sistema de gestión full-stack desarrollado para la Dirección de Evaluación de la Calidad Educativa. Automatiza el procesamiento de planillas Excel, asignación de roles y generación de reportes operativos en tiempo real.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Python",
+      "Flask",
+      "SQL",
+      "Tailwind CSS",
+      "SQLite",
+    ],
+    githubUrl: "https://github.com/GastonDavila23/PPS",
+    featured: true,
+    isPrivate: false,
+  },
+  {
     id: "proj-1",
     title: "Sistema de Gestión e Inventario Admin",
     description:
-      "Plataforma administrativa integral con base de datos relacional para control de stock, gestión de productos y panel de analíticas en tiempo real.",
+      "Plataforma administrativa integral con base de datos relacional para control de stock, gestión de productos, ventas y cobros, con panel de administración y reportes en tiempo real.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "SQL"],
-    demoUrl: "https://ejemplo.com",
-    githubUrl: "https://github.com/tu-usuario/repo",
+    demoUrl: "https://app-inventario-eosin.vercel.app/",
+    githubUrl: "#",
     featured: true,
+    isPrivate: true,
   },
   {
     id: "proj-2",
-    title: "Plataforma Digital de Menú & Pedidos",
+    title: "Agenda Digital para Turnos",
     description:
-      "Aplicación web autoadministrable enfocada en alta conversión para comercios gastronómicos, con visualización ágil de productos y optimización UX/UI.",
+      "Aplicación web creada para una Counselor, enfocada en la presentación de servicios terapéuticos y gestión de turnos.",
     tags: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "https://ejemplo.com",
-    githubUrl: "https://github.com/tu-usuario/repo",
+    demoUrl: "https://www.giselapontoni.com/",
+    githubUrl: "https://github.com/GastonDavila23/counseling-app",
     featured: true,
+    isPrivate: false,
   },
   {
     id: "proj-3",
-    title: "Portafolio Profesional de Consultoría",
+    title: "Eccommerce de Ventas",
     description:
-      "Sitio web corporativo de alto rendimiento con diseño modular, optimización SEO y despliegue continuo en Vercel.",
+      "Sitio web construido para un kiosco local, con sistema de menú digital, carrito de compras y funcionalidad de delivery.",
     tags: ["Next.js 15", "TypeScript", "Tailwind CSS v4"],
-    demoUrl: "https://ejemplo.com",
-    githubUrl: "https://github.com/tu-usuario/repo",
+    demoUrl: "https://www.rwkiosco.com/",
+    githubUrl: "https://github.com/GastonDavila23/eCommerce-kiosco-ruben",
     featured: false,
+    isPrivate: false,
+  },
+  {
+    id: "proj-4",
+    title: "Portafolio Profesional & Design System",
+    description:
+      "Desarrollo frontend modular enfocado en UI/UX moderna, alto rendimiento y accesibilidad. Integra animaciones fluidas con Framer Motion, soporte nativo para modo oscuro y un sistema de control de acceso para proyectos confidenciales.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
+    githubUrl: "https://github.com/GastonDavila23/portfolio-gaston",
+    demoUrl: "https://portfolio-gaston.vercel.app/",
+    featured: false,
+    isPrivate: false,
   },
 ];
 
@@ -53,9 +92,9 @@ export const experiences: Experience[] = [
     company: "Dirección de Evaluación de la Calidad Educativa (DGE)",
     period: "2025 - 2026",
     description: [
-      "Desarrollo e implementación de sistemas automatizados para la gestión escolar y operativos de evaluación educativa.",
-      "Resolución de incidencias críticas de autenticación y manejo de roles de usuario.",
-      "Optimización y mantenimiento de interfaces modernas enfocadas en la usabilidad del usuario final.",
+      "Desarrollo full-stack de un sistema automatizado para el procesamiento masivo de planillas Excel y la asignación algorítmica de roles en operativos educativos.",
+      "Arquitectura e implementación de API REST en Python (Flask), incluyendo servicios de cálculo operativo y generación de reportes y descargas en tiempo real.",
+      "Creación de una interfaz optimizada en React y TypeScript con paneles de administración, filtros avanzados y control de seguridad basado en roles de usuario.",
     ],
     technologies: ["Python", "Next.js", "React", "TypeScript", "SQL", "Tailwind CSS"],
   },

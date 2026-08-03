@@ -19,6 +19,7 @@ export interface Project {
   githubUrl?: string;
   image?: string;
   featured?: boolean;
+  isPrivate?: boolean;
 }
 
 export interface Experience {
